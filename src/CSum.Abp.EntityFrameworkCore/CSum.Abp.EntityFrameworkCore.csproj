@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+  <Import Project="..\..\configureawait.props" />
+  
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace></RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Core" Version="3.1.0" />
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Z.EntityFramework.Plus.EFCore" Version="3.0.41" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CSum.Abp.Ddd.Domain\CSum.Abp.Ddd.Domain.csproj" />
+    <ProjectReference Include="..\CSum.Abp.Util\CSum.Abp.Util.csproj" />
+  </ItemGroup>
+
+</Project>

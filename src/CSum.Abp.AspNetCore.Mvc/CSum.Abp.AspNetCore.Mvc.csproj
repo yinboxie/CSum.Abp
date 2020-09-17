@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  
+  <Import Project="..\..\common.props" />
+  <Import Project="..\..\configureawait.props" />
+  
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace></RootNamespace>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Magicodes.IE.Excel" Version="2.2.3" />
+    <PackageReference Include="Magicodes.IE.Pdf" Version="2.2.3" />
+    <PackageReference Include="Magicodes.IE.Word" Version="2.2.3" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="3.1.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\CSum.Abp.Data\CSum.Abp.Data.csproj" />
+    <ProjectReference Include="..\CSum.Abp.Util\CSum.Abp.Util.csproj" />
+  </ItemGroup>
+
+</Project>
